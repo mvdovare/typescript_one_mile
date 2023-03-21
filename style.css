@@ -1,0 +1,19 @@
+body {
+  font-size: 12px;
+}
+
+#map {
+  width: 95vw;
+  height: 78vh;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#multipolygonContainer,
+#geojsonContainer {
+  height: 50px;
+  overflow: auto;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 10px;
+}

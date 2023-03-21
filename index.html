@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <!-- <input type="text" id="name" name="name" required
+      minlength="4" maxlength="8" size="10"> -->
+
+    <label for="fname">First name:</label><br />
+    <input type="text" id="fname" name="fname" /><br />
+    <label for="lname">Last name:</label><br />
+    <input type="text" id="lname" name="lname" />
+
+    <div id="multipolygonContainer"></div>
+    <div id="geojsonContainer"></div>
+
+    <button type="button" id="save_button" style="margin-top: 10px">
+      save
+    </button>
+    <div id="map" style="margin-top: 10px"></div>
+  </body>
+</html>
