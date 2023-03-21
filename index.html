@@ -12,10 +12,15 @@
     <!-- <input type="text" id="name" name="name" required
       minlength="4" maxlength="8" size="10"> -->
 
-    <label for="fname">First name:</label><br />
-    <input type="text" id="fname" name="fname" /><br />
-    <label for="lname">Last name:</label><br />
-    <input type="text" id="lname" name="lname" />
+    <label for="latLngInput">Lat / Lng:</label><br />
+    <input type="text" id="latLngInput" name="latLngInput" /><br />
+
+    <label for="radiusInput">Radius:</label><br />
+    <input type="text" id="radiusInput" name="radiusInput" value="1" /><br />
+
+    <button type="button" id="refreshButton" style="margin-top: 10px">
+      Refresh
+    </button>
 
     <div id="multipolygonContainer"></div>
     <div id="geojsonContainer"></div>
