@@ -28,7 +28,7 @@ function draw(): void {
 
   const radius = +(radiusInput as HTMLInputElement).value;
 
-  //38.631312109301305, -90.21014776165008
+  //340.80319000000001, -73.93811
 
   if (lat && lng && radius) {
     // PASTE YOU COORDINATES, RADIUS and STEPS HERE
