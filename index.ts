@@ -6,6 +6,8 @@ import L = require('leaflet');
 
 const latLngInput = document.getElementById('latLngInput');
 const radiusInput = document.getElementById('radiusInput');
+const stepsInput = document.getElementById('steps');
+const unitsInput = document.getElementById('units');
 const refreshButton = document.getElementById('refreshButton');
 const multipolygonContainer: HTMLElement = document.getElementById(
   'multipolygonContainer'
@@ -27,18 +29,20 @@ function draw(): void {
   const lng = +lngString?.trim();
 
   const radius = +(radiusInput as HTMLInputElement).value;
+  const steps = +(stepsInput as HTMLInputElement).value;
+  const units = (unitsInput as HTMLInputElement).value;
 
   //340.80319000000001, -73.93811
 
   if (lat && lng && radius) {
     // PASTE YOU COORDINATES, RADIUS and STEPS HERE
-    const steps = 100;
+    // const steps = 100;
 
     const input = {
       lngLat: [lng, lat],
       radius,
     };
-    const options = { steps: steps, units: 'miles' };
+    const options = { steps: steps, units: units };
 
     const circle = turf.circle(input.lngLat, input.radius, options);
     const geojson: GeoJSON.FeatureCollection<any> = {
