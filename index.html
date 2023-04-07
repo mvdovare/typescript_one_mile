@@ -11,23 +11,34 @@
   <body>
     <!-- <input type="text" id="name" name="name" required
       minlength="4" maxlength="8" size="10"> -->
+    <div>
+      <label for="latLngInput">Lat / Lng:</label><br />
+      <input
+        type="text"
+        id="latLngInput"
+        name="latLngInput"
+        style="width: 60%"
+      />
+    </div>
+    <div style="margin-top: 5px; display: flex; gap: 10px">
+      <div>
+        <label for="radiusInput">Radius:</label><br />
+        <input type="text" id="radiusInput" name="radiusInput" value="1" />
+      </div>
 
-    <label for="latLngInput">Lat / Lng:</label><br />
-    <input type="text" id="latLngInput" name="latLngInput" /><br />
+      <div>
+        <label for="steps">Steps:</label><br />
+        <input type="text" id="steps" name="steps" value="100" />
+      </div>
 
-    <label for="radiusInput">Radius:</label><br />
-    <input type="text" id="radiusInput" name="radiusInput" value="1" /><br />
-
-    <label for="steps">Steps:</label><br />
-    <input type="text" id="steps" name="steps" value="100" /><br />
-
-    <label for="units">Units:</label><br>
-    <select name="units" id="units">
-      <option value="miles">miles</option>
-      <option value="meters">meters</option>
-    </select>
-    <br>
-
+      <div>
+        <label for="units">Units:</label><br />
+        <select name="units" id="units" style="height: 20px">
+          <option value="miles">miles</option>
+          <option value="meters">meters</option>
+        </select>
+      </div>
+    </div>
     <button type="button" id="refreshButton" style="margin-top: 10px">
       Refresh
     </button>
